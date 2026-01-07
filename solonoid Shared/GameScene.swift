@@ -23,7 +23,7 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         // Set background
-        backgroundColor = .white
+        backgroundColor = .black
         
         // Initialize game state and hex grid
         let hexGrid = HexGrid()

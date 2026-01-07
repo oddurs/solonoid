@@ -21,9 +21,9 @@ class HexTileNode: SKShapeNode {
         
         // Create regular hexagon path
         self.path = createHexagonPath()
-        self.fillColor = .clear
-        self.strokeColor = .gray
-        self.lineWidth = 1
+        self.fillColor = .blue
+        self.strokeColor = .darkGray
+        self.lineWidth = 2
         
         // Add value label
         valueLabel.fontName = "Arial-BoldMT"
@@ -70,36 +70,36 @@ class HexTileNode: SKShapeNode {
     /// Updates visual appearance based on value
     private func updateAppearance() {
         if value == 0 {
-            fillColor = UIColor(white: 0.95, alpha: 1)
-            strokeColor = .lightGray
+            fillColor = .blue
+            strokeColor = .darkGray
             valueLabel.text = ""
         } else {
             fillColor = colorForValue(value)
             strokeColor = .darkGray
             lineWidth = 2
             valueLabel.text = "\(value)"
-            valueLabel.fontColor = value > 4 ? .white : .black
+            valueLabel.fontColor = .black
         }
     }
     
     /// Returns color based on tile value
     private func colorForValue(_ value: Int) -> UIColor {
         switch value {
-        case 2: return UIColor(red: 0.93, green: 0.89, blue: 0.85, alpha: 1)
-        case 4: return UIColor(red: 0.93, green: 0.88, blue: 0.78, alpha: 1)
-        case 8: return UIColor(red: 0.95, green: 0.78, blue: 0.65, alpha: 1)
-        case 16: return UIColor(red: 0.96, green: 0.70, blue: 0.50, alpha: 1)
-        case 32: return UIColor(red: 0.96, green: 0.58, blue: 0.39, alpha: 1)
-        case 64: return UIColor(red: 0.97, green: 0.49, blue: 0.25, alpha: 1)
-        case 128: return UIColor(red: 0.93, green: 0.88, blue: 0.45, alpha: 1)
-        case 256: return UIColor(red: 0.93, green: 0.86, blue: 0.28, alpha: 1)
-        case 512: return UIColor(red: 0.93, green: 0.84, blue: 0.12, alpha: 1)
-        case 1024: return UIColor(red: 0.93, green: 0.84, blue: 0.0, alpha: 1)
+        case 2: return UIColor(red: 0.2, green: 0.4, blue: 1.0, alpha: 1)     // Light blue
+        case 4: return UIColor(red: 0.1, green: 0.35, blue: 0.9, alpha: 1)    // Medium blue
+        case 8: return UIColor(red: 0.0, green: 0.3, blue: 0.8, alpha: 1)     // Darker blue
+        case 16: return UIColor(red: 0.0, green: 0.25, blue: 0.7, alpha: 1)   // Even darker
+        case 32: return UIColor(red: 0.0, green: 0.2, blue: 0.6, alpha: 1)    // Deep blue
+        case 64: return UIColor(red: 0.0, green: 0.15, blue: 0.5, alpha: 1)   // Very deep blue
+        case 128: return UIColor(red: 0.0, green: 0.1, blue: 0.4, alpha: 1)   // Navy
+        case 256: return UIColor(red: 0.0, green: 0.08, blue: 0.3, alpha: 1)  // Dark navy
+        case 512: return UIColor(red: 0.0, green: 0.05, blue: 0.2, alpha: 1)  // Darker navy
+        case 1024: return UIColor(red: 0.0, green: 0.0, blue: 0.1, alpha: 1)  // Almost black
         default:
             if value >= 2048 {
-                return UIColor(red: 0.50, green: 0.13, blue: 0.52, alpha: 1)
+                return UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)     // Dark gray
             }
-            return .gray
+            return .blue
         }
     }
     
