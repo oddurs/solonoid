@@ -15,9 +15,12 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         let scene = GameScene.newGameScene()
-
-        // Present the scene
+        
+        // Set scene size to match the view
         let skView = self.view as! SKView
+        scene.size = skView.bounds.size
+        
+        // Present the scene
         skView.presentScene(scene)
         
         skView.ignoresSiblingOrder = true
