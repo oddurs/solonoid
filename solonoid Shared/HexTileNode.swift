@@ -22,8 +22,8 @@ class HexTileNode: SKShapeNode {
         // Create regular hexagon path
         self.path = createHexagonPath()
         self.fillColor = .blue
-        self.strokeColor = .darkGray
-        self.lineWidth = 2
+        self.strokeColor = .white
+        self.lineWidth = 3
         
         // Add value label
         valueLabel.fontName = "Arial-BoldMT"
@@ -71,12 +71,12 @@ class HexTileNode: SKShapeNode {
     private func updateAppearance() {
         if value == 0 {
             fillColor = .blue
-            strokeColor = .darkGray
+            strokeColor = .white
             valueLabel.text = ""
         } else {
             fillColor = colorForValue(value)
-            strokeColor = .darkGray
-            lineWidth = 2
+            strokeColor = .white
+            lineWidth = 3
             valueLabel.text = "\(value)"
             valueLabel.fontColor = .black
         }

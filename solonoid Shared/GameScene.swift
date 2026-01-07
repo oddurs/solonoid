@@ -31,7 +31,7 @@ class GameScene: SKScene {
         self.gameState = gameState
         
         // Create and add hex grid node
-        let hexGridNode = HexGridNode(hexSize: 35)
+        let hexGridNode = HexGridNode(hexSize: 50)
         hexGridNode.position = CGPoint(x: size.width / 2, y: size.height / 2)
         addChild(hexGridNode)
         self.hexGridNode = hexGridNode
@@ -41,9 +41,9 @@ class GameScene: SKScene {
         
         // Add score label
         let scoreLabel = SKLabelNode(fontNamed: "Arial")
-        scoreLabel.fontSize = 24
-        scoreLabel.fontColor = .black
-        scoreLabel.position = CGPoint(x: size.width / 2, y: size.height - 50)
+        scoreLabel.fontSize = 32
+        scoreLabel.fontColor = .yellow
+        scoreLabel.position = CGPoint(x: size.width / 2, y: size.height - 60)
         scoreLabel.text = "Score: 0"
         addChild(scoreLabel)
         self.scoreLabel = scoreLabel
