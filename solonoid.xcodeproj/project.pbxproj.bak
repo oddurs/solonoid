@@ -10,27 +10,7 @@
 		5DD1202F2F0D8BC20078B64B /* solonoid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = solonoid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD120402F0D8BC20078B64B /* solonoid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = solonoid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD120502F0D8BC20078B64B /* solonoid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = solonoid.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DD210002F0D8BC30078B64B /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/Direction.swift"; sourceTree = "<group>"; };
-		5DD210012F0D8BC30078B64B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/GameScene.swift"; sourceTree = "<group>"; };
-		5DD210022F0D8BC30078B64B /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/GameState.swift"; sourceTree = "<group>"; };
-		5DD210032F0D8BC30078B64B /* HexCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/HexCoordinate.swift"; sourceTree = "<group>"; };
-		5DD210042F0D8BC30078B64B /* HexGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/HexGrid.swift"; sourceTree = "<group>"; };
-		5DD210052F0D8BC30078B64B /* HexGridNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/HexGridNode.swift"; sourceTree = "<group>"; };
-		5DD210062F0D8BC30078B64B /* HexTileNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/HexTileNode.swift"; sourceTree = "<group>"; };
-		5DD210072F0D8BC30078B64B /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/Tile.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXBuildFile section */
-		5DD220002F0D8BC30078B64B /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210002F0D8BC30078B64B /* Direction.swift */; };
-		5DD220012F0D8BC30078B64B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210012F0D8BC30078B64B /* GameScene.swift */; };
-		5DD220022F0D8BC30078B64B /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210022F0D8BC30078B64B /* GameState.swift */; };
-		5DD220032F0D8BC30078B64B /* HexCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210032F0D8BC30078B64B /* HexCoordinate.swift */; };
-		5DD220042F0D8BC30078B64B /* HexGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210042F0D8BC30078B64B /* HexGrid.swift */; };
-		5DD220052F0D8BC30078B64B /* HexGridNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210052F0D8BC30078B64B /* HexGridNode.swift */; };
-		5DD220062F0D8BC30078B64B /* HexTileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210062F0D8BC30078B64B /* HexTileNode.swift */; };
-		5DD220072F0D8BC30078B64B /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210072F0D8BC30078B64B /* Tile.swift */; };
-/* End PBXBuildFile section */
-
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		5DD120652F0D8BC30078B64B /* Exceptions for "solonoid Shared" folder in "solonoid iOS" target */ = {
@@ -292,14 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-						5DD220002F0D8BC30078B64B /* Direction.swift in Sources */,
-			5DD220012F0D8BC30078B64B /* GameScene.swift in Sources */,
-			5DD220022F0D8BC30078B64B /* GameState.swift in Sources */,
-			5DD220032F0D8BC30078B64B /* HexCoordinate.swift in Sources */,
-			5DD220042F0D8BC30078B64B /* HexGrid.swift in Sources */,
-			5DD220052F0D8BC30078B64B /* HexGridNode.swift in Sources */,
-			5DD220062F0D8BC30078B64B /* HexTileNode.swift in Sources */,
-			5DD220072F0D8BC30078B64B /* Tile.swift in Sources */,);
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5DD1203C2F0D8BC20078B64B /* Sources */ = {

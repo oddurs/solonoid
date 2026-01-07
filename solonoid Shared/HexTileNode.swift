@@ -3,7 +3,7 @@ import SpriteKit
 /// Visual representation of a single hex tile
 class HexTileNode: SKShapeNode {
     let size: CGFloat
-    let coordinate: HexCoordinate
+    var coordinate: HexCoordinate
     var value: Int {
         didSet {
             updateAppearance()
@@ -39,11 +39,15 @@ class HexTileNode: SKShapeNode {
     }
     
     /// Creates a regular hexagon path with pointy-top orientation
-    private func createHexagonPath() -> UIBezierPath {
+    private func createHexagonPath() -> CGPath {
         let path = UIBezierPath()
         
         // Calculate hexagon vertices for pointy-top orientation
-        let angles = (0..<6).map { CGFloat($0) * .pi / 3.0 + .pi / 6.0 }
+        var angles: [CGFloat] = []
+        for i in 0..<6 {
+            let angle = CGFloat(i) * .pi / 3.0 + .pi / 6.0
+            angles.append(angle)
+        }
         
         var isFirst = true
         for angle in angles {
@@ -60,7 +64,7 @@ class HexTileNode: SKShapeNode {
         }
         
         path.close()
-        return path
+        return path.cgPath
     }
     
     /// Updates visual appearance based on value
@@ -110,7 +114,7 @@ class HexTileNode: SKShapeNode {
     /// Animates the tile moving to a new position
     func animateMove(to position: CGPoint, duration: TimeInterval = 0.15) {
         let moveAction = SKAction.move(to: position, duration: duration)
-        moveAction.timingMode = .easeInOut
+        moveAction.timingMode = .easeInEaseOut
         self.run(moveAction)
     }
 }
