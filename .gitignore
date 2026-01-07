@@ -1,0 +1,52 @@
+# Xcode
+#
+# gitignore contributors: remember to update the filters in .gitignore-global too
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/xcshareddata/
+
+# Xcode build
+build/
+DerivedData/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build
+
+# Xcode files
+*.xcconfig
+xcuserdata/
+
+# Swift Package Manager
+.build/
+.swiftpm/xcode/package.xcworkspace/xcuserdata/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*~.nib
+
+# Xcode IDE
+.idea/
+*.iml
+
+# VS Code
+*.code-workspace
+.vscode/
+
+# Runtime
+.env
+.env.local
+
+# OS
+Thumbs.db
