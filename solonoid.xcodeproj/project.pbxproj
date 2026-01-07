@@ -6,31 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5DD220002F0D8BC30078B64B /* solonoid Shared/Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210002F0D8BC30078B64B /* solonoid Shared/Direction.swift */; };
+		5DD220012F0D8BC30078B64B /* solonoid Shared/GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210012F0D8BC30078B64B /* solonoid Shared/GameScene.swift */; };
+		5DD220022F0D8BC30078B64B /* solonoid Shared/GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210022F0D8BC30078B64B /* solonoid Shared/GameState.swift */; };
+		5DD220032F0D8BC30078B64B /* solonoid Shared/HexCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210032F0D8BC30078B64B /* solonoid Shared/HexCoordinate.swift */; };
+		5DD220042F0D8BC30078B64B /* solonoid Shared/HexGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210042F0D8BC30078B64B /* solonoid Shared/HexGrid.swift */; };
+		5DD220052F0D8BC30078B64B /* solonoid Shared/HexGridNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210052F0D8BC30078B64B /* solonoid Shared/HexGridNode.swift */; };
+		5DD220062F0D8BC30078B64B /* solonoid Shared/HexTileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210062F0D8BC30078B64B /* solonoid Shared/HexTileNode.swift */; };
+		5DD220072F0D8BC30078B64B /* solonoid Shared/Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210072F0D8BC30078B64B /* solonoid Shared/Tile.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5DD1202F2F0D8BC20078B64B /* solonoid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = solonoid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD120402F0D8BC20078B64B /* solonoid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = solonoid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD120502F0D8BC20078B64B /* solonoid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = solonoid.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DD210002F0D8BC30078B64B /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/Direction.swift"; sourceTree = "<group>"; };
-		5DD210012F0D8BC30078B64B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/GameScene.swift"; sourceTree = "<group>"; };
-		5DD210022F0D8BC30078B64B /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/GameState.swift"; sourceTree = "<group>"; };
-		5DD210032F0D8BC30078B64B /* HexCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/HexCoordinate.swift"; sourceTree = "<group>"; };
-		5DD210042F0D8BC30078B64B /* HexGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/HexGrid.swift"; sourceTree = "<group>"; };
-		5DD210052F0D8BC30078B64B /* HexGridNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/HexGridNode.swift"; sourceTree = "<group>"; };
-		5DD210062F0D8BC30078B64B /* HexTileNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/HexTileNode.swift"; sourceTree = "<group>"; };
-		5DD210072F0D8BC30078B64B /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/Tile.swift"; sourceTree = "<group>"; };
+		5DD210002F0D8BC30078B64B /* solonoid Shared/Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/Direction.swift"; sourceTree = "<group>"; };
+		5DD210012F0D8BC30078B64B /* solonoid Shared/GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/GameScene.swift"; sourceTree = "<group>"; };
+		5DD210022F0D8BC30078B64B /* solonoid Shared/GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/GameState.swift"; sourceTree = "<group>"; };
+		5DD210032F0D8BC30078B64B /* solonoid Shared/HexCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/HexCoordinate.swift"; sourceTree = "<group>"; };
+		5DD210042F0D8BC30078B64B /* solonoid Shared/HexGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/HexGrid.swift"; sourceTree = "<group>"; };
+		5DD210052F0D8BC30078B64B /* solonoid Shared/HexGridNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/HexGridNode.swift"; sourceTree = "<group>"; };
+		5DD210062F0D8BC30078B64B /* solonoid Shared/HexTileNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/HexTileNode.swift"; sourceTree = "<group>"; };
+		5DD210072F0D8BC30078B64B /* solonoid Shared/Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "solonoid Shared/Tile.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXBuildFile section */
-		5DD220002F0D8BC30078B64B /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210002F0D8BC30078B64B /* Direction.swift */; };
-		5DD220012F0D8BC30078B64B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210012F0D8BC30078B64B /* GameScene.swift */; };
-		5DD220022F0D8BC30078B64B /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210022F0D8BC30078B64B /* GameState.swift */; };
-		5DD220032F0D8BC30078B64B /* HexCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210032F0D8BC30078B64B /* HexCoordinate.swift */; };
-		5DD220042F0D8BC30078B64B /* HexGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210042F0D8BC30078B64B /* HexGrid.swift */; };
-		5DD220052F0D8BC30078B64B /* HexGridNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210052F0D8BC30078B64B /* HexGridNode.swift */; };
-		5DD220062F0D8BC30078B64B /* HexTileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210062F0D8BC30078B64B /* HexTileNode.swift */; };
-		5DD220072F0D8BC30078B64B /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD210072F0D8BC30078B64B /* Tile.swift */; };
-/* End PBXBuildFile section */
-
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		5DD120652F0D8BC30078B64B /* Exceptions for "solonoid Shared" folder in "solonoid iOS" target */ = {
@@ -131,6 +130,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DC5852D2F0F10990050AC0B /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				5DD210002F0D8BC30078B64B /* solonoid Shared/Direction.swift */,
+				5DD210012F0D8BC30078B64B /* solonoid Shared/GameScene.swift */,
+				5DD210022F0D8BC30078B64B /* solonoid Shared/GameState.swift */,
+				5DD210032F0D8BC30078B64B /* solonoid Shared/HexCoordinate.swift */,
+				5DD210042F0D8BC30078B64B /* solonoid Shared/HexGrid.swift */,
+				5DD210052F0D8BC30078B64B /* solonoid Shared/HexGridNode.swift */,
+				5DD210062F0D8BC30078B64B /* solonoid Shared/HexTileNode.swift */,
+				5DD210072F0D8BC30078B64B /* solonoid Shared/Tile.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		5DD120212F0D8BC00078B64B = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +153,7 @@
 				5DD120412F0D8BC20078B64B /* solonoid tvOS */,
 				5DD120512F0D8BC20078B64B /* solonoid macOS */,
 				5DD120302F0D8BC20078B64B /* Products */,
+				5DC5852D2F0F10990050AC0B /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,14 +307,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-						5DD220002F0D8BC30078B64B /* Direction.swift in Sources */,
-			5DD220012F0D8BC30078B64B /* GameScene.swift in Sources */,
-			5DD220022F0D8BC30078B64B /* GameState.swift in Sources */,
-			5DD220032F0D8BC30078B64B /* HexCoordinate.swift in Sources */,
-			5DD220042F0D8BC30078B64B /* HexGrid.swift in Sources */,
-			5DD220052F0D8BC30078B64B /* HexGridNode.swift in Sources */,
-			5DD220062F0D8BC30078B64B /* HexTileNode.swift in Sources */,
-			5DD220072F0D8BC30078B64B /* Tile.swift in Sources */,);
+				5DD220002F0D8BC30078B64B /* solonoid Shared/Direction.swift in Sources */,
+				5DD220012F0D8BC30078B64B /* solonoid Shared/GameScene.swift in Sources */,
+				5DD220022F0D8BC30078B64B /* solonoid Shared/GameState.swift in Sources */,
+				5DD220032F0D8BC30078B64B /* solonoid Shared/HexCoordinate.swift in Sources */,
+				5DD220042F0D8BC30078B64B /* solonoid Shared/HexGrid.swift in Sources */,
+				5DD220052F0D8BC30078B64B /* solonoid Shared/HexGridNode.swift in Sources */,
+				5DD220062F0D8BC30078B64B /* solonoid Shared/HexTileNode.swift in Sources */,
+				5DD220072F0D8BC30078B64B /* solonoid Shared/Tile.swift in Sources */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5DD1203C2F0D8BC20078B64B /* Sources */ = {
@@ -327,6 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -360,6 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
