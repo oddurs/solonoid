@@ -11,6 +11,7 @@ class HexTileNode: SKShapeNode {
     }
     
     private let valueLabel = SKLabelNode(fontNamed: "Arial-BoldMT")
+    private let backgroundNode = SKShapeNode()
     
     init(at coordinate: HexCoordinate, size: CGFloat, value: Int = 0) {
         self.size = size
@@ -18,6 +19,13 @@ class HexTileNode: SKShapeNode {
         self.value = value
         
         super.init()
+        
+        // Create background hexagon with semi-transparent white
+        backgroundNode.path = createHexagonPath()
+        backgroundNode.fillColor = UIColor(white: 1.0, alpha: 0.2)
+        backgroundNode.strokeColor = .clear
+        backgroundNode.zPosition = -1
+        addChild(backgroundNode)
         
         // Create regular hexagon path
         self.path = createHexagonPath()
@@ -72,11 +80,13 @@ class HexTileNode: SKShapeNode {
         if value == 0 {
             fillColor = .blue
             strokeColor = .white
+            backgroundNode.fillColor = UIColor(white: 1.0, alpha: 0.2)
             valueLabel.text = ""
         } else {
             fillColor = colorForValue(value)
             strokeColor = .white
             lineWidth = 3
+            backgroundNode.fillColor = UIColor(white: 1.0, alpha: 0.2)
             valueLabel.text = "\(value)"
             valueLabel.fontColor = .black
         }

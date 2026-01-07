@@ -27,7 +27,8 @@ class HexGridNode: SKNode {
     
     /// Converts hex coordinates to screen position
     func hexToScreen(_ hex: HexCoordinate) -> CGPoint {
-        let x = hexWidth * (3.0 / 2.0 * CGFloat(hex.q))
+        // For pointy-top hexagons in axial coordinates
+        let x = hexWidth * (3.0/2.0 * CGFloat(hex.q))
         let y = hexHeight * (CGFloat(hex.r) + CGFloat(hex.q) / 2.0) / 2.0
         return CGPoint(x: x, y: -y)  // Negate y for SpriteKit coordinate system
     }
